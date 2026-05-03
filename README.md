@@ -1,11 +1,4 @@
 This project leverages the **AG2 Beta** framework to build sophisticated multi-agent systems. The current implementation demonstrates a parallel web research pattern where a lead agent coordinates specialized researchers.
-- 3-agent stack
-  > Search Agent<br/>
-  > Review Agent<br/>
-  > Report Agent<br/>
-- Benefits:
-  > Parellelism<br/>
-  > Funnel down context
 
 ## Architecture & Technology Stack
 - **Framework:** AG2 Beta (`autogen.beta`)
@@ -13,9 +6,16 @@ This project leverages the **AG2 Beta** framework to build sophisticated multi-a
 - **Tools:** 
   - `TavilyClient`: Used for web searching (`tavily_search`) and content extraction (`fetch_url`).
 - **Core Pattern:** 
-  - **Lead Agent:** Decomposes complex questions into sub-tasks and synthesizes final reports.
-  - **Researcher Agents:** Execute specific search and retrieval tasks in parallel.
+  - **Lead Agent:** 
+  - **Researcher Agents:** 
   - **LaneRouter:** Provides live, interleaved progress tracking for concurrent agent operations in the terminal.
+  - **3-agent stack**
+  > Search Agent: Execute specific search and retrieval tasks in parallel.<br/>
+  > Review Agent: Select, summarize and rate the articles<br/>
+  > Report Agent: Decomposes complex questions into sub-tasks and synthesizes final reports.<br/>
+  - **Benefits:**
+  > Parellelism<br/>
+  > Funnel down context
 
 ## Setup & Configuration
 1.  **Environment Variables:** Create a `.env` file with the following keys:
