@@ -6,9 +6,6 @@ This project leverages the **AG2 Beta** framework to build sophisticated multi-a
 - **Tools:** 
   - `TavilyClient`: Used for web searching (`tavily_search`) and content extraction (`fetch_url`).
 - **Core Pattern:** 
-  - **Lead Agent:** 
-  - **Researcher Agents:** 
-  - **LaneRouter:** Provides live, interleaved progress tracking for concurrent agent operations in the terminal.
   - **3-agent stack**
   > Search Agent: Execute specific search and retrieval tasks in parallel.<br/>
   > Review Agent: Select, summarize and rate the articles<br/>
