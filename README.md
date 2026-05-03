@@ -1,8 +1,7 @@
 This project leverages the **AG2 Beta** framework to build sophisticated multi-agent systems. The current implementation demonstrates a parallel web research pattern where a lead agent coordinates specialized researchers.
-- 4-agent stack
+- 3-agent stack
   > Search Agent<br/>
   > Review Agent<br/>
-  > Summary Agent<br/>
   > Report Agent<br/>
 - Benefits:
   > Parellelism<br/>
